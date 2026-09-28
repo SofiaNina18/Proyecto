@@ -8,10 +8,34 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <FrameLayout
-        android:id="@+id/fragmento"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#3F51B5"
+            app:titleTextColor="@color/white"
+            app:navigationIconTint="@color/white" />
+        <FrameLayout
+            android:id="@+id/fragmento"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemActiveIndicatorStyle="@null"
+            app:labelVisibilityMode="labeled"
+            app:itemIconTint="@color/nav_color"
+            app:itemTextColor="@color/nav_color"
+            app:menu="@menu/drawer_menu" />
+    </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navView"
@@ -19,7 +43,5 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:menu="@menu/drawer_menu" />
-
-
 
 </androidx.drawerlayout.widget.DrawerLayout>

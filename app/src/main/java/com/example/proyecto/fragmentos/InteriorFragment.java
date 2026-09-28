@@ -10,11 +10,11 @@ import android.view.ViewGroup;
 
 import com.example.proyecto.R;
 
-public class GaleriaFragment extends Fragment {
+public class InteriorFragment extends Fragment {
 
 
 
-    public GaleriaFragment() {
+    public InteriorFragment() {
         // Required empty public constructor
     }
 
@@ -22,28 +22,6 @@ public class GaleriaFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_galeria, container, false);
+        return inflater.inflate(R.layout.fragment_interior, container, false);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
