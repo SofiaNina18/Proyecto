@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -23,9 +24,6 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapaFragment extends Fragment  {
     private WebView webViewMapa;
-
-
-
 
     public MapaFragment() {
         // Required empty public constructor
@@ -44,10 +42,19 @@ public class MapaFragment extends Fragment  {
         super.onViewCreated(view, savedInstanceState);
 
         webViewMapa = view.findViewById(R.id.webViewMapa);
-        webViewMapa.getSettings().setJavaScriptEnabled(true);
+
+        WebSettings webSettings = webViewMapa.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setBuiltInZoomControls(true);
+        webSettings.setDisplayZoomControls(false);
+
         webViewMapa.setWebViewClient(new WebViewClient());
-        webViewMapa.loadUrl("https://maps.app.goo.gl/EbFkYFDGi77vAPTS8");
+
+        String htmlMapa = "<html><body style='margin:0;padding:0;'><iframe width='100%' height='100%' frameborder='0' style='border:0' src='https://maps.google.com/maps?q=43.2713,-2.9489&z=16&output=embed' allowfullscreen></iframe></body></html>";
+
+        webViewMapa.loadDataWithBaseURL(null, htmlMapa, "text/html", "UTF-8", null);
     }
+
 
 }
 
