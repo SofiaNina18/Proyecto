@@ -100,6 +100,8 @@ public class MainActivity extends AppCompatActivity {
             reemplazarFragmento(new GaleriaFragment(), R.anim.fade_in, R.anim.fade_out);
         }
         navView.setCheckedItem(id);
+        bottomNavView.getMenu().findItem(id).setChecked(true);
+
     }
 
 
