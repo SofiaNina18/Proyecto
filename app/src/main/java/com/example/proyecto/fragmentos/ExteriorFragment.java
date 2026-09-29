@@ -59,10 +59,10 @@ public class ExteriorFragment extends Fragment {
         listaFotosExterior.add(new Foto("Texto Exterior 3", R.drawable.imagen7));
         listaFotosExterior.add(new Foto("Texto Exterior 4", R.drawable.imagen8));
 
-        listaFotosExterior.add(new Foto("Texto Exterior 1", R.drawable.imagen5));
-        listaFotosExterior.add(new Foto("Texto Exterior 2", R.drawable.imagen6));
-        listaFotosExterior.add(new Foto("Texto Exterior 3", R.drawable.imagen7));
-        listaFotosExterior.add(new Foto("Texto Exterior 4", R.drawable.imagen8));
+        listaFotosExterior.add(new Foto("Texto Exterior 5", R.drawable.imagen5));
+        listaFotosExterior.add(new Foto("Texto Exterior 6", R.drawable.imagen6));
+        listaFotosExterior.add(new Foto("Texto Exterior 7", R.drawable.imagen7));
+        listaFotosExterior.add(new Foto("Texto Exterior 8", R.drawable.imagen8));
 
     }
 }

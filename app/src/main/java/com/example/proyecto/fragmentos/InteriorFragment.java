@@ -53,10 +53,10 @@ public class InteriorFragment extends Fragment {
         listaFotosInterior.add(new Foto("Texto 2", R.drawable.imagen2));
         listaFotosInterior.add(new Foto("Texto 3", R.drawable.imagen3));
         listaFotosInterior.add(new Foto("Texto 4", R.drawable.imagen4));
-        listaFotosInterior.add(new Foto("Texto 1", R.drawable.imagen1));
-        listaFotosInterior.add(new Foto("Texto 2", R.drawable.imagen2));
-        listaFotosInterior.add(new Foto("Texto 3", R.drawable.imagen3));
-        listaFotosInterior.add(new Foto("Texto 4", R.drawable.imagen4));
+        listaFotosInterior.add(new Foto("Texto 5", R.drawable.imagen1));
+        listaFotosInterior.add(new Foto("Texto 6", R.drawable.imagen2));
+        listaFotosInterior.add(new Foto("Texto 7", R.drawable.imagen3));
+        listaFotosInterior.add(new Foto("Texto 8", R.drawable.imagen4));
 
     }
 }
