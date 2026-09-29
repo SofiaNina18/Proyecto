@@ -46,7 +46,7 @@ public class AdaptadorRecyclerGaleria extends RecyclerView.Adapter<AdaptadorRecy
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(contexto, "Has seleccionado: " + fotoActual.getTitulo(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(contexto, "Foto seleccionada: " + fotoActual.getTitulo(), Toast.LENGTH_SHORT).show();
 
                 android.app.Dialog dialog = new android.app.Dialog(contexto);
                 dialog.setContentView(R.layout.dialog_imagen);
