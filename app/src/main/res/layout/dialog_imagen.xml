@@ -14,12 +14,6 @@
         android:scaleType="centerCrop"
         android:src="@drawable/logo_almi" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Haz clic en la imagen para cerrar"
-        android:textSize="12sp"
-        android:textColor="#757575" />
+
 
 </LinearLayout>

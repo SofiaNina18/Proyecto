@@ -56,11 +56,10 @@ public class MainActivity extends AppCompatActivity {
         );
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-
         toggle.setDrawerIndicatorEnabled(true);
 
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("App Almi");
+        if (toggle.getDrawerArrowDrawable() != null) {
+            toggle.getDrawerArrowDrawable().setColor(android.graphics.Color.WHITE);
         }
 
 
@@ -94,21 +93,21 @@ public class MainActivity extends AppCompatActivity {
     }
     private void cambiarPantalla(int id) {
         if (id == R.id.itInicio) {
-            reemplazarFragmento(new InicioFragment());
+            reemplazarFragmento(new InicioFragment(), R.anim.fade_in, R.anim.fade_out);
         } else if (id == R.id.itMapa) {
-            reemplazarFragmento(new MapaFragment());
+            reemplazarFragmento(new MapaFragment(), R.anim.slide_in_right, R.anim.slide_out_left);
         } else if (id == R.id.itGaleria) {
-            reemplazarFragmento(new GaleriaFragment());
+            reemplazarFragmento(new GaleriaFragment(), R.anim.fade_in, R.anim.fade_out);
         }
+        navView.setCheckedItem(id);
     }
 
 
-    private void reemplazarFragmento(Fragment fragmento) {
+    private void reemplazarFragmento(Fragment fragmento, int animEntrada, int animSalida) {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
+        transaction.setCustomAnimations(animEntrada, animSalida);
         transaction.replace(R.id.fragmento, fragmento);
         transaction.commit();
-
     }
 
 }

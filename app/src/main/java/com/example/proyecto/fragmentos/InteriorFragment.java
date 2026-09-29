@@ -49,10 +49,15 @@ public class InteriorFragment extends Fragment {
 
     private void cargarDatosInterior() {
         listaFotosInterior = new ArrayList<>();
-        listaFotosInterior.add(new Foto("Texto 1", R.drawable.logo_almi));
-        listaFotosInterior.add(new Foto("Texto 2", R.drawable.logo_almi));
-        listaFotosInterior.add(new Foto("Texto 3", R.drawable.logo_almi));
-        listaFotosInterior.add(new Foto("Texto 4", R.drawable.logo_almi));
+        listaFotosInterior.add(new Foto("Texto 1", R.drawable.imagen1));
+        listaFotosInterior.add(new Foto("Texto 2", R.drawable.imagen2));
+        listaFotosInterior.add(new Foto("Texto 3", R.drawable.imagen3));
+        listaFotosInterior.add(new Foto("Texto 4", R.drawable.imagen4));
+        listaFotosInterior.add(new Foto("Texto 1", R.drawable.imagen1));
+        listaFotosInterior.add(new Foto("Texto 2", R.drawable.imagen2));
+        listaFotosInterior.add(new Foto("Texto 3", R.drawable.imagen3));
+        listaFotosInterior.add(new Foto("Texto 4", R.drawable.imagen4));
+
     }
 }
 

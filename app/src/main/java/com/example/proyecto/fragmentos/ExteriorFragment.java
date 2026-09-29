@@ -45,17 +45,24 @@ public class ExteriorFragment extends Fragment {
         recyclerView = view.findViewById(R.id.recyclerExterior);
         recyclerView.setLayoutManager(new GridLayoutManager(requireContext(), 2));
 
-        cargarDatosInterior();
+        cargarDatosExterior();
 
         AdaptadorRecyclerGaleria adaptador = new AdaptadorRecyclerGaleria(requireContext(), listaFotosExterior);
         recyclerView.setAdapter(adaptador);
     }
 
-    private void cargarDatosInterior() {
+    private void cargarDatosExterior() {
         listaFotosExterior = new ArrayList<>();
-        listaFotosExterior.add(new Foto("Texto Exterior 1", R.drawable.logo_almi));
-        listaFotosExterior.add(new Foto("Texto Exterior 2", R.drawable.logo_almi));
-        listaFotosExterior.add(new Foto("Texto Exterior 3", R.drawable.logo_almi));
-        listaFotosExterior.add(new Foto("Texto Exterior 4", R.drawable.logo_almi));
+
+        listaFotosExterior.add(new Foto("Texto Exterior 1", R.drawable.imagen5));
+        listaFotosExterior.add(new Foto("Texto Exterior 2", R.drawable.imagen6));
+        listaFotosExterior.add(new Foto("Texto Exterior 3", R.drawable.imagen7));
+        listaFotosExterior.add(new Foto("Texto Exterior 4", R.drawable.imagen8));
+
+        listaFotosExterior.add(new Foto("Texto Exterior 1", R.drawable.imagen5));
+        listaFotosExterior.add(new Foto("Texto Exterior 2", R.drawable.imagen6));
+        listaFotosExterior.add(new Foto("Texto Exterior 3", R.drawable.imagen7));
+        listaFotosExterior.add(new Foto("Texto Exterior 4", R.drawable.imagen8));
+
     }
 }

@@ -18,8 +18,11 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="#3F51B5"
+            android:paddingTop="12dp"
+            app:contentInsetStartWithNavigation="12dp"
             app:titleTextColor="@color/white"
-            app:navigationIconTint="@color/white" />
+            app:navigationIconTint="@color/white"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Medium" />
         <FrameLayout
             android:id="@+id/fragmento"
             android:layout_width="match_parent"

@@ -61,6 +61,7 @@ public class AdaptadorRecyclerGaleria extends RecyclerView.Adapter<AdaptadorRecy
                     }
                 });
 
+                dialog.setCanceledOnTouchOutside(true);
                 dialog.show();
             }
         });
