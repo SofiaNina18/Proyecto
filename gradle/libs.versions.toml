@@ -10,6 +10,9 @@ activityKtx = "1.13.0"
 constraintlayout = "2.2.2"
 playServicesMaps = "20.0.0"
 viewpager2 = "1.1.0"
+roomCommon = "2.8.5"
+roomRuntime = "2.8.5"
+roomCompiler = "2.8.5"
 
 [libraries]
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
@@ -22,6 +25,9 @@ activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
 viewpager2 = { module = "androidx.viewpager2:viewpager2", version.ref = "viewpager2" }
+room-common = { group = "androidx.room", name = "room-common", version.ref = "roomCommon" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "roomRuntime" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomCompiler" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
