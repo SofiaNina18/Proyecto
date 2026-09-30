@@ -45,10 +45,11 @@ public class GaleriaFragment extends Fragment {
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
                 if (position == 0) {
                     tab.setText("Interior");
-                } else {
+                } else if (position == 1) {
                     tab.setText("Exterior");
-                }
+                } else tab.setText("Entorno");
             }
+
         }).attach();
     }
 }

@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
+import com.example.proyecto.fragmentos.EntornoFragment;
 import com.example.proyecto.fragmentos.ExteriorFragment;
 import com.example.proyecto.fragmentos.GaleriaFragment;
 import com.example.proyecto.fragmentos.InteriorFragment;
@@ -19,12 +20,15 @@ public class AdaptadorViewPager extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         if (position == 0) {
             return new InteriorFragment();
+        } if (position == 1){
+            return new ExteriorFragment();
         }
-        return new ExteriorFragment();
+        return new EntornoFragment();
     }
+
 
     @Override
     public int getItemCount() {
-        return 2;
+        return 3;
     }
 }

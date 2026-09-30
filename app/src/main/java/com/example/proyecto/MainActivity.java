@@ -16,6 +16,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.proyecto.fragmentos.CamaraFragment;
 import com.example.proyecto.fragmentos.GaleriaFragment;
 import com.example.proyecto.fragmentos.InicioFragment;
 import com.example.proyecto.fragmentos.MapaFragment;
@@ -98,7 +99,10 @@ public class MainActivity extends AppCompatActivity {
             reemplazarFragmento(new MapaFragment(), R.anim.slide_in_right, R.anim.slide_out_left);
         } else if (id == R.id.itGaleria) {
             reemplazarFragmento(new GaleriaFragment(), R.anim.fade_in, R.anim.fade_out);
+        } else if (id == R.id.itCamara) {
+            reemplazarFragmento(new CamaraFragment(), R.anim.fade_in, R.anim.fade_out);
         }
+
         navView.setCheckedItem(id);
         bottomNavView.getMenu().findItem(id).setChecked(true);
 
